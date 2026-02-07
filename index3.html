@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Leaf Bookstore</title>
+  <link rel="stylesheet" href="styles/style3.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Green Leaf Bookstore</h1>
+
+  <button id="theme-toggle" aria-pressed="false" class="theme-btn">
+    🌙 Dark Mode
+  </button>
+
+  <nav class="navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      Green Leaf Bookstore is a peaceful place for readers who enjoy
+      novels, academic books, and self-development literature.
+    </p>
+
+    <img src="images/bookstore.jpg" alt="Inside view of bookstore">
+  </section>
+
+  <section id="collection" class="section light-bg">
+    <h2>Our Collection</h2>
+    <ul class="book-list">
+      <li class="book-item">Fiction & Literature</li>
+      <li class="book-item">Educational Books</li>
+      <li class="book-item">Biographies</li>
+      <li class="book-item">Children’s Books</li>
+    </ul>
+    <p><small>(Click any category)</small></p>
+  </section>
+
+  <article id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label>Email:</label><br>
+      <input type="email" id="email" required>
+      <br>
+      <span id="error" aria-live="polite"></span>
+      <br><br>
+      <button type="submit">Send</button>
+    </form>
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Green Leaf Bookstore. All Rights Reserved.</p>
+</footer>
+
+<!-- MODAL -->
+<div id="book-modal" role="dialog" aria-hidden="true">
+  <div class="modal-box">
+    <h2>Book Details</h2>
+    <p id="modal-content"></p>
+    <button id="close-modal">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
