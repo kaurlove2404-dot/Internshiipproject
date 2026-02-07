@@ -55,6 +55,131 @@ body {
     padding: 15px;
     border-radius: 5px;
 }
+/* ========== Mobile First (Default) ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.site-header {
+    background: #2f6f4e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: block;
+}
+
+.section {
+    padding: 1rem;
+}
+
+.light-bg {
+    background: #f2f7f4;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.site-footer {
+    background: #2f6f4e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ========== Tablet (769px - 1024px) ========== */
+@media (min-width: 769px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .book-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+/* ========== Desktop (1025px+) ========== */
+@media (min-width: 1025px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .content {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    #collection {
+        grid-template-columns: 1fr;
+    }
+
+    .book-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
 
 /* Image Styling */
 .section img {
